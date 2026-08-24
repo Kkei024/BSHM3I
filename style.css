@@ -1,0 +1,218 @@
+html {
+    background-color: rgb(214, 214, 214);
+    padding: 0 2vw;
+    font-size: clamp(1vw, 2vh, 5vw);
+    scrollbar-width: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.daysSelect {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: flex-end;
+
+    li  {
+        padding: .5vh 1.5vw;
+        background-color: rgb(214, 214, 214);
+        background-image: linear-gradient(180deg,
+            rgba(219, 219, 219, 0) 0%,
+            rgba(219, 219, 219, 0) 70%,
+            rgb(170, 170, 170) 100%);
+        border: .2vw solid rgba(0, 0, 0, 0.323);
+        border-bottom: none;
+        cursor: pointer;
+        max-height: 50%;
+        position: relative;
+
+        &:first-child {
+            border-radius: 1vw 0 0 0;
+        }
+
+        &:last-child {
+            border-radius: 0 1vw 0 0;
+        }
+    }
+
+    li.active  {
+        background-image: none;
+        background-color: white;
+        padding: 2vh;
+        border: none;
+        border-radius: 1vw 1vw 0 0 ;
+    }
+}
+
+
+.header {
+    justify-self: center;
+    text-align: center;
+}
+
+.sched {
+    padding: 2vh 2vw;
+    background-color: white;
+    border-radius: 0 2vw 2vw 2vw;
+
+    ul {
+        padding-inline-start: 3vw;
+    }
+}
+
+.subj {
+    border: .2vw solid grey;
+    border-left: .8vw solid;
+    border-radius: 1vw;
+    display: flex;
+    
+    &:not(:last-child) {
+        margin-bottom: clamp(2vh, 2vw, 5vh);
+    }
+
+    * {
+        align-content: center;
+    }
+
+    .left {
+        border-right: .3vw dotted darkgray;
+        padding: 1vh;
+        line-height: clamp(3vh, 3vw, 7vh);
+        width: 30%;
+
+        h3, h6 {
+            margin: 0;
+        }
+    }
+
+    .right {
+        padding-left: 2vw;
+        width: 70%;
+        border-radius: 0 1vw 1vw 0;
+    }
+}
+
+.vacant {
+    border-left: .8vw solid var(--vacant);
+
+    .left {
+        background-color: var(--vacantBG);
+    }
+}
+
+.GaS {
+    border-left: .8vw solid var(--GaS);
+
+    .left {
+        background-color: var(--GaSBG);
+    }
+}
+
+.pathfit {
+    border-left: .8vw solid var(--pathfit);
+
+    .left {
+        background-color: var(--pathfitBG);
+    }
+}
+
+.PGC {
+    border-left: .8vw solid var(--PGC);
+
+    .left {
+        background-color: var(--PGCBG);
+    }
+}
+
+.KnWF {
+    border-left: .8vw solid var(--KnWF);
+
+    .left {
+        background-color: var(--KnWFBG);
+    }
+}
+
+.PT {
+    border-left: .8vw solid var(--PT);
+
+    .left {
+        background-color: var(--PTBG);
+    }
+}
+
+.BaP {
+    border-left: .8vw solid var(--BaP);
+
+    .left {
+        background-color: var(--BaPBG);
+    }
+}
+
+.TaHM {
+    border-left: .8vw solid var(--TaHM);
+
+    .left {
+        background-color: var(--TAHMBG);
+    }
+}
+
+.MP {
+    border-left: .8vw solid var(--MP);
+
+    .left {
+        background-color: var(--MPBG);
+    }
+}
+
+.HO {
+    border-left: .8vw solid var(--HO);
+
+    .left {
+        background-color: var(--HOBG);
+    }
+}
+
+.QSM {
+    border-left: .8vw solid var(--QSM);
+
+    .left {
+        background-color: var(--QSMBG);
+    }
+}
+
+:root {
+    --vacant: rgb(0, 255, 21);
+    --vacantBG: rgb(220, 255, 230);
+    
+    --GaS: rgb(255, 0, 0);
+    --GaSBG: rgb(255, 220, 220);
+    
+    --pathfit: rgb(255, 132, 0);
+    --pathfitBG: rgb(255, 232, 200);
+    
+    --PGC: rgb(255, 247, 0);
+    --PGCBG: rgb(255, 247, 200);
+    
+    --KnWF: rgb(157, 255, 0);
+    --KnWFBG: rgb(230, 255, 200);
+    
+    --PT: rgb(0, 255, 191);
+    --PTBG: rgb(200, 255, 231);
+    
+    --BaP: rgb(0, 213, 255);
+    --BaPBG: rgb(210, 243, 255);
+    
+    --TaHM: rgb(0, 21, 255);
+    --TAHMBG: rgb(200, 221, 255);
+    
+    --MP: rgb(119, 0, 255);
+    --MPBG: rgb(219, 200, 255);
+    
+    --HO: rgb(221, 0, 255);
+    --HOBG: rgb(255, 200, 240);
+    
+    --QSM: rgb(255, 0, 106);
+    --QSMBG: rgb(255, 200, 240);
+}
