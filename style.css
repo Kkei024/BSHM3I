@@ -154,7 +154,7 @@ ul, li {
     border-left: .8vw solid var(--TaHM);
 
     .left {
-        background-color: var(--TAHMBG);
+        background-color: var(--TaHMBG);
     }
 }
 
@@ -205,7 +205,7 @@ ul, li {
     --BaPBG: rgb(210, 243, 255);
     
     --TaHM: rgb(0, 21, 255);
-    --TAHMBG: rgb(200, 221, 255);
+    --TaHMBG: rgb(200, 221, 255);
     
     --MP: rgb(119, 0, 255);
     --MPBG: rgb(219, 200, 255);
