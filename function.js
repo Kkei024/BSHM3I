@@ -14,9 +14,8 @@ function time() {
 let startTimesH = [
     //sun
     //mon
-    16, 17, 19,
+    13, 16, 17, 19,
     //tue
-    '08',
     //wed
     '07', 12, 16, 17, 19,
     //thu
@@ -30,9 +29,8 @@ let startTimesH = [
 let startTimesM = [
     //sun
     //mon
-    '00', 30, '00',
+    '00', '00', 30, '00',
     //tue
-    '00',
     //wed
     '00', '00', '00', 30, '00',
     //thu
@@ -46,9 +44,8 @@ let startTimesM = [
 let endTimesH = [
     //sun
     //mon
-    17, 19, 20, 
+    16, 17, 19, 20, 
     //tue
-    11,
     //wed
     12, 16, 17, 19, 20,
     //thu
@@ -62,9 +59,8 @@ let endTimesH = [
 let endTimesM = [
     //sun
     //mon
-    30, '00', 30,
+    '00',30, '00', 30,
     //tue
-    '00',
     //wed
     '00', '00', 30, '00',  30,
     //thu
